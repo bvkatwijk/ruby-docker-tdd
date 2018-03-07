@@ -2,6 +2,14 @@ version: "3"
 
 services:
 
+  #Test: run tests and quit
   test:
     build: .
     command: ["bundle", "exec", "rake", "test"]
+
+  #TDD: Continuously run tests, dont quit
+  tdd:
+    build: .
+    command: ["bundle", "exec", "guard", "--no-interactions"]
+    volumes:
+      - .:/src

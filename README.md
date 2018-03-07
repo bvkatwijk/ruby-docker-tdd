@@ -8,3 +8,7 @@ travis with docker-compose. The aim is to require just one manual command for st
 ## Test
 * Local test run (assuming all dependencies installed): `bundle exec rake test`
 * Docker test run (assuming docker-compose installed) `docker-compose up --build test`
+
+## TDD
+* Local TDD `bundle exec guard`
+* Docker TDD `docker-compose up --build tdd`
